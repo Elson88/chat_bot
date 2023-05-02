@@ -1,4 +1,5 @@
 ﻿using API_chat_postgreSQL.Controllers.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,6 +7,7 @@ namespace API_chat_postgreSQL.Controllers
 {
     [Route("/")]
     [ApiController]
+    [Authorize]
     public class LocalidadeController : ControllerBase
     {
         public static List<Localidade> lista = new List<Localidade>();
