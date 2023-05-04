@@ -7,7 +7,7 @@ namespace API_chat_postgreSQL.Controllers
 {
     [Route("/")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class LocalidadeController : ControllerBase
     {
         public static List<Localidade> lista = new List<Localidade>();

@@ -15,8 +15,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddAuthentication()
-    .AddJwtBearer();
+//builder.Services.AddAuthentication()
+//    .AddJwtBearer();
 
 
 //builder.Services.AddDbContext<API_chat_postgreSQLDBContext>();
