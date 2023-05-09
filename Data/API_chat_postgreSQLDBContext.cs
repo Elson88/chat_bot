@@ -16,12 +16,12 @@ namespace API_chat_postgreSQL.Data
         
         }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseNpgsql();
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    base.OnConfiguring(optionsBuilder);
+        //    optionsBuilder.UseNpgsql();
 
-        }
+        //}
 
         public DbSet<Localidade> Localidade { get; set; }
     }
