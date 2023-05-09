@@ -14,8 +14,7 @@ namespace API_chat_postgreSQL.Controllers
             List<Localidade> lista = new List<Localidade>();
             try
             {
-                NpgsqlConnection conn  = Connection.GetConnection();
-                conn.Open();
+                NpgsqlConnection conn  = Connection.GetConnection();               
                 string sql = $"SELECT  moradas.localidade from moradas, especialidades, clinicas, clinica_especialidade where clinica_especialidade.id_clinica = clinicas.id_clinica and especialidades.id_especialidade = clinica_especialidade.id_especialidade and clinicas.id_endereco = moradas.id_endereco and especialidades.nome_especialidade = '{Especialidade}'";
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, conn);
                 NpgsqlDataReader dr = cmd.ExecuteReader();
