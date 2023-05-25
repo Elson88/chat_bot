@@ -15,7 +15,7 @@ namespace API_chat_postgreSQL.Controllers
             NpgsqlConnection conn = null;
             try
             {
-                conn = new NpgsqlConnection("Server=localhost;Port=5432;User Id=postgres;Password=filipe93;Database=clinicas_saude");
+                conn = new NpgsqlConnection("Server=localhost;Port=5432;User Id=postgres;Password=Estagio.2023;Database=clinicas_saude");
                 conn.Open();
             }catch (Exception ex)
             {
